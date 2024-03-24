@@ -1,0 +1,175 @@
+/* variables */
+
+:root {
+  --menu-bg: #191919;
+  --box-shadow: rgb(25, 25, 25, 0.3);
+  --green-accent1: #118580;
+  --green-accent2: #7f912b;
+  --orange-accent1: #f79518;
+  --orange-accent2: #ffe696;
+  --orange-accent3: #ffcb00;
+  --orange-accent4: #fffced;
+  --blue-accent1: #0088bf;
+  --red-accent1: #dd2d41;
+}
+
+/* small reset */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* document header */
+.header {
+  box-shadow: 2px 0 2px -1px var(--menu-bg);
+}
+
+.header .header-nav {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.header .menu-button,
+.footer .footer-button {
+  width: 44px;
+  aspect-ratio: 1;
+  background-color: var(--green-accent1);
+  border-radius: 5px;
+}
+
+.header .menu-button:focus {
+  background-color: var(--orange-accent1);
+}
+
+/* content */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  row-gap: 20px;
+}
+
+/* page 34 and 35 */
+
+.content .page-34-header-list li,
+.content .page-35-header-list li {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* page 34 */
+
+.page-34 {
+  box-shadow: -4px 8px 10px var(--box-shadow), 4px 8px 10px var(--box-shadow);
+}
+
+/* page 34 header */
+
+.content .page-34-header-list {
+  display: grid;
+  grid-template-columns: 48px 3fr 1fr;
+}
+
+/* page 34 content */
+
+/* page 34 content intro */
+
+.page-34-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  row-gap: 10px;
+}
+
+/* page 34 content diftong */
+
+.diftong .diftong-repere-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+}
+
+.diftong .diftong-repere-section .diftong-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+}
+
+.diftong .diftong-repere-section .diftong-images :nth-child(1) {
+  grid-area: 1/1/2 / span 2;
+}
+
+.diftong .diftong-repere-section .diftong-images :nth-child(2) {
+  grid-area: 2/2/3 / span 2;
+}
+
+/* page 35 */
+
+.page-35 {
+  box-shadow: -4px 8px 10px var(--box-shadow), 4px 8px 10px var(--box-shadow);
+}
+
+/* page 35 header */
+
+.content .page-35-header-list {
+  display: grid;
+  grid-template-columns: 1fr 3fr 40px;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .header .header-nav {
+    display: block;
+  }
+
+  .header .menu-button:hover,
+  .footer .footer-button:hover {
+    background-color: var(--orange-accent1);
+  }
+
+  /* content */
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  /* page 34 */
+
+  .page-34 {
+    box-shadow: -4px 8px 10px var(--box-shadow);
+  }
+}
+
+@media (min-width: 1280px) {
+  /* page 34 and 35 header */
+
+  .content .page-34-header-list li,
+  .content .page-35-header-list li {
+    padding: 20px 10px 10px 10px;
+  }
+
+  /* page 34 content */
+
+  .page-34-intro {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+  }
+
+  .diftong .diftong-repere-section {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+  }
+}
