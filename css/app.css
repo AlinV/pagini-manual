@@ -1,3 +1,85 @@
+/* fonts */
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('../fonts/AmericanTypewriter.ttc');
+}
+
+@font-face {
+  font-family: 'FiraSansCondensed';
+  src: url('../fonts/FiraSansCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans-Italic.otf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('../fonts/IBMPlexSerif-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('../fonts/IBMPlexSerif-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('../fonts/IBMPlexSerif-Light.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('../fonts/IBMPlexSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url('../fonts/MinionPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Webdings';
+  src: url('../fonts/Webdings.ttf');
+}
+
+@font-face {
+  font-family: 'Wingdings';
+  src: url('../fonts/Wingdings.ttf');
+}
+
 /* variables */
 
 :root {
@@ -29,6 +111,7 @@
 
 body {
   font-size: 14px;
+  font-family: 'IBMPlexSerif';
 }
 
 /* document header */
@@ -94,6 +177,11 @@ body {
 }
 
 /* page 34 content */
+
+.page-34-content > h1 {
+  font-family: 'Fi', sans-serif;
+  letter-spacing: 0.5px;
+}
 
 /* page 34 content intro */
 
